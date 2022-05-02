@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />}>
-          <Route path="/" element={<Todos />} />
+          <Route index element={<Todos />} />
           <Route path="about" element={<About />} >
             <Route path=":slug" element={<SinglePage />} />
           </Route>

@@ -6,7 +6,9 @@ export default function Main() {
     return (
         <React.Fragment>
             <Navbar />
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
         </React.Fragment>
     );
 }
