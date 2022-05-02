@@ -23,7 +23,7 @@ const completedStyle = {
     textDecoration: "line-through",
 };
 
-function TodoItem(props: TodoItemProps) {
+export default function TodoItem(props: TodoItemProps) {
     const { id, title, completed } = props.todo;
     const [editing, setEditing] = useState(false);
     const onKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
@@ -61,5 +61,3 @@ function TodoItem(props: TodoItemProps) {
         </li>
     );
 }
-
-export default TodoItem;

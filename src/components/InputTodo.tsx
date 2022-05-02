@@ -5,7 +5,7 @@ import { FaPlusCircle } from "react-icons/fa";
 import styles from "./InputTodo.module.css";
 
 
-function InputTodo(props: { onSubmit: (title: string) => void }) {
+export default function InputTodo(props: { onSubmit: (title: string) => void }) {
     const [title, setTitle] = useState("");
 
     const onChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -35,5 +35,3 @@ function InputTodo(props: { onSubmit: (title: string) => void }) {
         </form>
     );
 }
-
-export default InputTodo;

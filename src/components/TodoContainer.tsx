@@ -14,7 +14,7 @@ function loadTodos(): Todo[] {
     return maybeTodos ? JSON.parse(maybeTodos) : [];
 }
 
-function TodoContainer() {
+export default function TodoContainer() {
 
     const [todos, setTodos] = useState<Todo[]>(loadTodos);
 
@@ -57,5 +57,3 @@ function TodoContainer() {
         </div>
     );
 }
-
-export default TodoContainer;
