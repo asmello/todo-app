@@ -1,0 +1,21 @@
+.content {
+    padding: 8rem 40px;
+    display: flex;
+}
+
+.list {
+    list-style: none;
+    flex: 2;
+    margin-right: 15px;
+}
+
+.list a {
+    color: #9f9f9f;
+    text-transform: capitalize;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.list a:hover {
+    color: #000;
+}
